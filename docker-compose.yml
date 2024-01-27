@@ -1,0 +1,66 @@
+version: '3.4'
+
+networks:
+  dev:
+    driver: bridge
+services:
+  service1:
+    image: bonzhik/service1
+    depends_on:
+      - "rabbitmq"
+      - "service1-db"
+    container_name: service1
+    ports:
+      - "8080:80"
+    build:
+      context: ./service1
+      dockerfile: Dockerfile
+    environment: 
+      - ConnectionStrings__DefaultConnection=User ID=postgres;Password=postgres;Server=service1-db;Port=5432;Database=service1Db;
+      - ASPNETCORE_URLS=http://+:80
+    networks: 
+      - dev 
+  service2:
+    image: bonzhik/service2
+    depends_on:
+      - "rabbitmq"
+    container_name: service2
+    ports:
+      - "8081:80"
+    build:
+      context: ./service2
+      dockerfile: Dockerfile
+    environment: 
+      - ASPNETCORE_URLS=http://+:80
+    networks: 
+      - dev
+  service1-db:
+    image: postgres
+    container_name: service1-db
+    restart: always
+    environment:
+      POSTGRES_DB: service1Db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5433:5432"
+    volumes: 
+      - app_data1:/var/lib/postgresql/data
+    networks:
+      - dev
+  rabbitmq:
+    image: rabbitmq:management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    networks:
+      - dev
+volumes:
+  rabbitmq_data:
+  app_data1:
+    
