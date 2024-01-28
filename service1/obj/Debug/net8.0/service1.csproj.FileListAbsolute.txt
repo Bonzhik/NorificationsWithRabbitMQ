@@ -104,3 +104,4 @@ C:\aspNet\rabbitMQ\service1\obj\Debug\net8.0\refint\service1.dll
 C:\aspNet\rabbitMQ\service1\obj\Debug\net8.0\service1.pdb
 C:\aspNet\rabbitMQ\service1\obj\Debug\net8.0\service1.genruntimeconfig.cache
 C:\aspNet\rabbitMQ\service1\obj\Debug\net8.0\ref\service1.dll
+C:\aspNet\rabbitMQ\service1\obj\Debug\net8.0\service1.sourcelink.json

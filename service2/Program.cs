@@ -7,6 +7,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHostedService<MessageBusSubscriber>();
 builder.Services.AddSingleton<EventProcessor>();
+builder.Services.AddTransient<EmailSender>();
 
 var app = builder.Build();
 

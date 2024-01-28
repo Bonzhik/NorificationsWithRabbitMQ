@@ -102,3 +102,7 @@ C:\aspNet\rabbitMQ\service2\obj\Debug\net8.0\refint\service2.dll
 C:\aspNet\rabbitMQ\service2\obj\Debug\net8.0\service2.pdb
 C:\aspNet\rabbitMQ\service2\obj\Debug\net8.0\service2.genruntimeconfig.cache
 C:\aspNet\rabbitMQ\service2\obj\Debug\net8.0\ref\service2.dll
+C:\aspNet\rabbitMQ\service2\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\aspNet\rabbitMQ\service2\bin\Debug\net8.0\MailKit.dll
+C:\aspNet\rabbitMQ\service2\bin\Debug\net8.0\MimeKit.dll
+C:\aspNet\rabbitMQ\service2\obj\Debug\net8.0\service2.sourcelink.json
