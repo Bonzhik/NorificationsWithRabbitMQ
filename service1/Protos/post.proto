@@ -1,0 +1,18 @@
+syntax="proto3";
+
+option csharp_namespace = "service1";
+
+service GrpcPost{
+    rpc GetPosts(GetPostsRequest) returns (PostsResponse);
+}
+
+message GetPostsRequest{}
+
+message GrpcPostModel{
+    int32 postId = 1; 
+    string body = 2;
+    int32 topicId = 3;
+}
+message PostsResponse{
+    repeated GrpcPostModel post = 1;
+}

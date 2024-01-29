@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\aspNet\\rabbitMQ\\service2\\service2.csproj": {}
+    "C:\\aspNet\\notif\\service2\\service2.csproj": {}
   },
   "projects": {
-    "C:\\aspNet\\rabbitMQ\\service2\\service2.csproj": {
+    "C:\\aspNet\\notif\\service2\\service2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\aspNet\\rabbitMQ\\service2\\service2.csproj",
+        "projectUniqueName": "C:\\aspNet\\notif\\service2\\service2.csproj",
         "projectName": "service2",
-        "projectPath": "C:\\aspNet\\rabbitMQ\\service2\\service2.csproj",
+        "projectPath": "C:\\aspNet\\notif\\service2\\service2.csproj",
         "packagesPath": "C:\\Users\\Олег\\.nuget\\packages\\",
-        "outputPath": "C:\\aspNet\\rabbitMQ\\service2\\obj\\",
+        "outputPath": "C:\\aspNet\\notif\\service2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Олег\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,20 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.25.2, )"
+            },
+            "Grpc.Net.Client": {
+              "target": "Package",
+              "version": "[2.60.0, )"
+            },
+            "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.60.0, )"
+            },
             "MailKit": {
               "target": "Package",
               "version": "[4.3.0, )"

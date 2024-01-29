@@ -8,6 +8,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddHostedService<MessageBusSubscriber>();
 builder.Services.AddSingleton<EventProcessor>();
 builder.Services.AddTransient<EmailSender>();
+builder.Services.AddScoped<GrpcPostClientService>();
 
 var app = builder.Build();
 
