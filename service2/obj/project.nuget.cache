@@ -1,10 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "j4Rx55CPeX5KdXVtH7ZvoLiTpD3QOtyL66fBkcyRTDdPbQ7ceUSBbvD8B2jAFhrqubCYKRxKsdfS6OpkrqpdDg==",
+  "dgSpecHash": "m/hr7hP0oM1Jhpa3+HpOaNLRwRcYMC2BnAPNcaW+2IxxAHC0hAdOll7F5Ol8xh2n+S3uOUJUoHGIUr8SeXcgfw==",
   "success": true,
-  "projectFilePath": "C:\\aspNet\\rabbitMQ\\service2\\service2.csproj",
+  "projectFilePath": "C:\\aspNet\\notif\\service2\\service2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Олег\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
+    "C:\\Users\\Олег\\.nuget\\packages\\google.protobuf\\3.25.2\\google.protobuf.3.25.2.nupkg.sha512",
+    "C:\\Users\\Олег\\.nuget\\packages\\grpc.core.api\\2.60.0\\grpc.core.api.2.60.0.nupkg.sha512",
+    "C:\\Users\\Олег\\.nuget\\packages\\grpc.net.client\\2.60.0\\grpc.net.client.2.60.0.nupkg.sha512",
+    "C:\\Users\\Олег\\.nuget\\packages\\grpc.net.common\\2.60.0\\grpc.net.common.2.60.0.nupkg.sha512",
+    "C:\\Users\\Олег\\.nuget\\packages\\grpc.tools\\2.60.0\\grpc.tools.2.60.0.nupkg.sha512",
     "C:\\Users\\Олег\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Олег\\.nuget\\packages\\mailkit\\4.3.0\\mailkit.4.3.0.nupkg.sha512",
     "C:\\Users\\Олег\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.1\\microsoft.aspnetcore.openapi.8.0.1.nupkg.sha512",

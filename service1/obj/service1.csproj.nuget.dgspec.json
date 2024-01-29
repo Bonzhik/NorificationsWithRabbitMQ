@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\aspNet\\rabbitMQ\\service1\\service1.csproj": {}
+    "C:\\aspNet\\notif\\service1\\service1.csproj": {}
   },
   "projects": {
-    "C:\\aspNet\\rabbitMQ\\service1\\service1.csproj": {
+    "C:\\aspNet\\notif\\service1\\service1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\aspNet\\rabbitMQ\\service1\\service1.csproj",
+        "projectUniqueName": "C:\\aspNet\\notif\\service1\\service1.csproj",
         "projectName": "service1",
-        "projectPath": "C:\\aspNet\\rabbitMQ\\service1\\service1.csproj",
+        "projectPath": "C:\\aspNet\\notif\\service1\\service1.csproj",
         "packagesPath": "C:\\Users\\Олег\\.nuget\\packages\\",
-        "outputPath": "C:\\aspNet\\rabbitMQ\\service1\\obj\\",
+        "outputPath": "C:\\aspNet\\notif\\service1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Олег\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Grpc.AspNetCore": {
+              "target": "Package",
+              "version": "[2.60.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.1, )"

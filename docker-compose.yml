@@ -12,6 +12,7 @@ services:
     container_name: service1
     ports:
       - "8080:80"
+      - "666:666"
     build:
       context: ./service1
       dockerfile: Dockerfile
