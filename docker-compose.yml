@@ -61,19 +61,6 @@ services:
       - rabbitmq_data:/var/lib/rabbitmq
     networks:
       - dev
-  smtp:
-    image: namshi/smtp
-    environment:
-      - "SMTP_RELAY_HOST=smtp.gmail.com"
-      - "SMTP_RELAY_PORT=587"
-      - "SMTP_RELAY_USERNAME=swerobon@gmail.com" 
-      - "SMTP_RELAY_PASSWORD=oaxd xiqa ajvs cszr"         
-      - "SMTP_RELAY_AUTH=true"
-      - "SMTP_RELAY_TLS=true"
-    ports:
-      - "1025:1025" 
-    networks:
-      - dev 
 volumes:
   rabbitmq_data:
   app_data1:
